@@ -97,7 +97,7 @@ import java.util.Collections;
     static int modul(int array1[]) {
         int modul1 = array1[0];
         for (int i = 1; i < array1.length; i++) {
-            modul1 = modul1 / i;
+            modul1 = modul1 % i;
         }
         return modul1;
     }
@@ -105,7 +105,7 @@ import java.util.Collections;
     static double modul2(double array2[]) {
         double modul2 = array2[0];
         for (double i = 1; i < array2.length; i++) {
-            modul2 = modul2 / i;
+            modul2 = modul2 % i;
         }
         return modul2;
     }
