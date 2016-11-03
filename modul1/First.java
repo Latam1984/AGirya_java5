@@ -1,3 +1,5 @@
+package modul1;
+
 /**
  * Created by Aleksey on 26.10.2016.
  */
