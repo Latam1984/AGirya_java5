@@ -31,32 +31,26 @@ import java.util.Scanner;
  */
 public class Homework_2_2 {
     public static void main(String[] args) {
-        double balance1 = 100;
-        double balance2 = 100;
-        double withdrawal = 10;
-        double withdrawal2 = 99;
-        double comis = 0.05;
+        double balance1 = 100, balance2 = 100, withdrawal = 10, withdrawal2 = 99, comis = 0.05;
+        balance(balance1 = 100, balance2 = 100, withdrawal = 10, withdrawal2 = 99, comis = 0.05);
+    }
 
+    static void balance  (double balance1, double balance2, double withdrawal, double withdrawal2, double comis){
         System.out.println("Input: \n\n" + "balance = " + (int)balance1 + ";\n" + "withdrawal = " + (int)withdrawal + "; \n");
-
         if ((balance1 - withdrawal - (withdrawal * comis))>0) {
-            balance1 = balance1 - withdrawal - (withdrawal * comis);
-        System.out.println("Output: \n" + "Ok " + comis + " " + balance1 + "\n");
-
+            double balance = balance1 - withdrawal - (withdrawal * comis);
+        System.out.println("Output: \n" + "Ok " + comis + " " + balance + "\n");
         }
         else {
-            System.out.println("Input: \n\n" + "balance = " + (int)balance1 + ";\n" + "withdrawal = " + (int)withdrawal + "; \n");
+            System.out.println("Input: \n\n" + "balance = " + balance1 + ";\n" + "withdrawal = " + withdrawal + "; \n");
             System.out.println("Output: \nNO");
         };
-
-
-
         if ((balance2 - withdrawal2 - (withdrawal2 * comis))>0) {
             System.out.println("Input: \n\n" + "balance = " + (int)balance2 + ";\n" + "withdrawal = " + (int)withdrawal2 + "; \n");
-            balance2 = balance2 - withdrawal2 - (withdrawal2 * comis);
+         double   balance3 = balance2 - withdrawal2 - (withdrawal2 * comis);
         }
         else {
             System.out.println("Input: \n\n" + "balance = " + (int)balance2 + ";\n" + "withdrawal = " + (int)withdrawal2 + "; \n");
             System.out.println("Output: \nNO");}
-
-}}
+    }
+}
