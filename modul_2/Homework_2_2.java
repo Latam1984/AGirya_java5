@@ -32,7 +32,7 @@ import java.util.Scanner;
 public class Homework_2_2 {
     public static void main(String[] args) {
         double balance1 = 100, balance2 = 100, withdrawal = 10, withdrawal2 = 99, comis = 0.05;
-        balance(balance1 = 100, balance2 = 100, withdrawal = 10, withdrawal2 = 99, comis = 0.05);
+        balance(balance1, balance2, withdrawal, withdrawal2, comis);
     }
 
     static void balance  (double balance1, double balance2, double withdrawal, double withdrawal2, double comis){

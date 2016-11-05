@@ -34,9 +34,18 @@ package modul_2;
  *
  *
  *
- * Created by Aleksey on 04.11.2016.
- */
-public class Homework_2_3 {
-    int[] balances = {1200, 250, 2000, 500, 3200};
-    String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
-}
+// * Created by Aleksey on 04.11.2016.
+// */
+//public class Homework_2_3 {
+//    public static void main(String[] args) {
+//        int[] balances = {1200, 250, 2000, 500, 3200};
+//        String[] ownerNames = {"Jane", "Ann", "Jack", "Oww", "Lane"};
+//        balance(balances, ownerNames);
+//
+//    }
+//
+//    public static String balance (int balances, String ownerNames){
+//
+//    }
+//
+//}
