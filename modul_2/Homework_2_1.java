@@ -6,33 +6,8 @@ import java.util.Collections;
 
 /**
  * Created by Aleksey on 01.11.2016.
- *
- *Домашнее задание №2.1
- Grade: Rubric icon. Opens a dialog.25/100Click to launch rubrics popup.
- View Grade Information. Opens a dialogue
- Input: array with size = 10 can be of one of two data types: int and double. Calculate:
-
- sum
- min/max
- max positive
- multiplication
- modulus of first and last element
- second largest element
-
- As a result you should have methods with following names :
-
- sum(int array[]), sum(double[])
- min(int array[]), min(double[])
- max(int array[]), max(double[])
- maxPositive(int array[]), maxPositive(double array[]),
- multiplication  (int array[]), multiplication (double[])
- modulus(int array[]), modulus(double[])
- secondLargest(int array[]), secondLargest(double[])
- *
- *
-*
-*/
-        public class Homework_2_1 {
+ */
+public class Homework_2_1 {
     public static void main(String[] args) {
         int[] array1 = new int[]{10, 15, 17, -7, 1, 25, 19, -14, 11, -37};
         double[] array2 = new double[]{0.5, 1.3, 7, -0.5, 20.5, 13, -11.5, 17, -9, 8};
@@ -121,62 +96,62 @@ import java.util.Collections;
 
     static int modulus(int array1[]) {
         int modul1 = array1[0];
-        modul1 = modul1 % array1[9];
+        modul1 = modul1 % array1[array1.length - 1];
         return modul1;
     }
 
     static double modulus(double array2[]) {
         double modul2 = array2[0];
-        modul2 = modul2 % array2[9];
+        modul2 = modul2 % array2[array2.length - 1];
         return modul2;
     }
 
     static int secondLargest(int array1[]) {
 
-        for(int i = array1.length-1 ; i > 0 ; i--) {
+        for (int i = array1.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (array1[j] > array1[j + 1]) {
                     int temp = array1[j];
                     array1[j] = array1[j + 1];
-                    array1[j + 1] = temp;}
+                    array1[j + 1] = temp;
+                }
             }
         }
         return array1[8];
     }
 
     static double secondLargest(double array2[]) {
-       for (int i = array2.length - 1; i > 0; i--){
-           for (int j = 0; j < i; j++){
-               if (array2[j] > array2[j + 1]){
-                   double temp = array2[j];
-                   array2[j] = array2[j + 1];
-                   array2[j + 1] = temp;
-               }
-           }
-       }
+        for (int i = array2.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (array2[j] > array2[j + 1]) {
+                    double temp = array2[j];
+                    array2[j] = array2[j + 1];
+                    array2[j + 1] = temp;
+                }
+            }
+        }
         return array2[8];
     }
 
     static int maxPositive(int array1[]) {
         Arrays.sort(array1);
-        int max = array1[9];
+        int max = array1[array1.length - 1];
         for (int i = 0; i < array1.length; i++) {
             if (i < 0) {
                 System.out.println("array don't have positive numbers");
             }
         }
-            return max;
-        }
-
-        static double maxPositive (double array2[]){
-            Arrays.sort(array2);
-            double max2 = array2[9];
-            for(double i = 0; i < array2.length; i++){
-                if (i < 0){
-                    System.out.println("array don't have positive numbers");
-                }
-            }
-            return max2;
-        }
-
+        return max;
     }
+
+    static double maxPositive(double array2[]) {
+        Arrays.sort(array2);
+        double max2 = array2[array2.length - 1];
+        for (double i = 0; i < array2.length; i++) {
+            if (i < 0) {
+                System.out.println("array don't have positive numbers");
+            }
+        }
+        return max2;
+    }
+}
