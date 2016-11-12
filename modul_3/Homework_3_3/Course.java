@@ -4,15 +4,15 @@ import java.util.Date;
 
 /**
  * Created by Aleksey on 11.11.2016.
- *
+ * <p>
  * Класс Course с полями:
- Date startDate,
- String name,
- int hoursDuration,
- String teacherName.
- Создайте 2 конструктора с аргументами
- startDate, name;
- hourseDuration, name, teacherName.
+ * Date startDate,
+ * String name,
+ * int hoursDuration,
+ * String teacherName.
+ * Создайте 2 конструктора с аргументами
+ * startDate, name;
+ * hourseDuration, name, teacherName.
  */
 public class Course {
     private Date startDate;

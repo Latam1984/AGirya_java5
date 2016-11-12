@@ -2,16 +2,16 @@ package modul_3.Homework_3_3;
 
 /**
  * Created by Aleksey on 11.11.2016.
- *
+ * <p>
  * Класс Student с полями:
- String firstName,
- String lastName,
- int group,
- Course[] coursesTaken,
- int age.
- С 2 конструкторами с аргументами
- firstName, lastName, group;
- lastName, coursesTaken.
+ * String firstName,
+ * String lastName,
+ * int group,
+ * Course[] coursesTaken,
+ * int age.
+ * С 2 конструкторами с аргументами
+ * firstName, lastName, group;
+ * lastName, coursesTaken.
  */
 public class Student {
     private String firstName;

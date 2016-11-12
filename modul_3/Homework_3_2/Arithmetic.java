@@ -6,7 +6,7 @@ package modul_3.Homework_3_2;
 public class Arithmetic {
 
 
-    public Integer  add (Integer a, Integer b){
+    public Integer add(Integer a, Integer b) {
         Integer sum = a + b;
         return sum;
     }

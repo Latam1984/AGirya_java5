@@ -2,9 +2,9 @@ package modul_3.Homework_3_3;
 
 /**
  * Created by Aleksey on 11.11.2016.
- *CollegeStudent унаследован от Student.
- Дополнительные поля: String collegeName, int rating, long id.
- Создайте 3 конструктора: 2 таких же, как и в Student and один с аргументами - всеми полями класса.
+ * CollegeStudent унаследован от Student.
+ * Дополнительные поля: String collegeName, int rating, long id.
+ * Создайте 3 конструктора: 2 таких же, как и в Student and один с аргументами - всеми полями класса.
  */
 public class CollegeStudent extends Student {
     private String collegeName;
