@@ -36,7 +36,7 @@ import java.util.Date;
  * Создайте 5 объектов класса Course. Создайте объекты других классов, используя все конструкторы.
  * У вас должно быть 13 объектов в классе Solution.
  */
-public class Homework_3_3 {
+public class Solution {
 
 
     Course course = new Course(new Date(), "Java4");

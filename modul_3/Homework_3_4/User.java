@@ -36,7 +36,7 @@ public class User {
         int withdrawal = 500;
         double comis1 = 0.05, comis2 = 0.1;
         double balance1;
-        if (balance > 1000) {
+        if (balance < 1000) {
             balance1 = balance - (withdrawal + (withdrawal * comis1));
         } else balance1 = balance - (withdrawal + (withdrawal * comis2));
 
