@@ -34,8 +34,10 @@ public class User {
 
     public double withdraw(int sum) {
         double comis1 = 0.05, comis2 = 0.1;
-        if (sum < 1000) {return getBalance() - (sum + (sum * comis1));}
-        else { return (getBalance() - (sum + (sum * comis2)));}
+        if (sum < 1000) {return balance = (int) (getBalance() - (sum + (sum * comis1)));}
+        else { return balance = (int)(getBalance() - (sum + (sum * comis2)));}
+
+
     }
 
 
@@ -78,7 +80,7 @@ public class User {
     }
 
     public void setMonthOfEmployment(int monthOfEmployment) {
-        monthOfEmployment = monthOfEmployment;
+        this.monthOfEmployment = monthOfEmployment;
     }
 
     public String getCompanyName() {

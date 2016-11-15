@@ -24,6 +24,9 @@ public class Homework_3_4 {
         user1.paySalary(2000, 5000);
         System.out.println(user1.withdraw(1000));
         user1.monthIncreaser(2);
+//        user1.setBalance((int) user1.withdraw(1000));
+
+        System.out.println(user1.getBalance());
     }
 
 }
