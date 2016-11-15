@@ -17,7 +17,7 @@ public class Homework_3_2 {
     public static void main(String[] args) {
         Arithmetic arr = new Arithmetic();
         Adder add = new Adder();
-        System.out.println(arr.add(10, 15));
+        System.out.println(add.add(10, 15));
         System.out.println(add.check(113, 15));
     }
 }

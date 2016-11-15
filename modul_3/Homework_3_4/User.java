@@ -21,7 +21,7 @@ package modul_3.Homework_3_4;
 public class User {
     private String name;
     private int balance;
-    private int MonthOfEmployment;
+    private int monthOfEmployment;
     String companyName;
     private int salary;
     private String currency;
@@ -32,38 +32,26 @@ public class User {
         System.out.println(paySalary);
     }
 
-    public double withdraw(int balance) {
-        int withdrawal = 500;
+    public double withdraw(int sum) {
         double comis1 = 0.05, comis2 = 0.1;
-        double balance1;
-        if (balance < 1000) {
-            balance1 = balance - (withdrawal + (withdrawal * comis1));
-        } else balance1 = balance - (withdrawal + (withdrawal * comis2));
-
-        return balance1;
+        if (sum < 1000) {return getBalance() - (sum + (sum * comis1));}
+        else { return (getBalance() - (sum + (sum * comis2)));}
     }
 
-    public void companyNameLength(String companyName) {
+
+    public void companyNameLength() {
         System.out.println(companyName.length());
     }
 
-    public void monthIncreaser(int monthOfEmployment) {
-//        if (monthOfEmployment < 12) {
-//            monthOfEmployment = monthOfEmployment + 1;
-//        } else {
-//            monthOfEmployment = 1;
-//        }
-//        System.out.println(monthOfEmployment);
-//
-
-        monthOfEmployment = monthOfEmployment + 1;
+    public void monthIncreaser(int addMonth) {
+        this.monthOfEmployment = monthOfEmployment + addMonth;
         System.out.println(monthOfEmployment);
     }
 
-    public User(String nave, int balance, int monthOfEmployment, String companyName, int salary, String currency) {
-        this.name = nave;
+    public User(String name, int balance, int monthOfEmployment, String companyName, int salary, String currency) {
+        this.name = name;
         this.balance = balance;
-        this.MonthOfEmployment = monthOfEmployment;
+        this.monthOfEmployment = monthOfEmployment;
         this.companyName = companyName;
         this.salary = salary;
         this.currency = currency;
@@ -86,11 +74,11 @@ public class User {
     }
 
     public int getMonthOfEmployment() {
-        return MonthOfEmployment;
+        return monthOfEmployment;
     }
 
     public void setMonthOfEmployment(int monthOfEmployment) {
-        MonthOfEmployment = monthOfEmployment;
+        monthOfEmployment = monthOfEmployment;
     }
 
     public String getCompanyName() {
