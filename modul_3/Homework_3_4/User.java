@@ -36,8 +36,6 @@ public class User {
         double comis1 = 0.05, comis2 = 0.1;
         if (sum < 1000) {return balance = (int) (getBalance() - (sum + (sum * comis1)));}
         else { return balance = (int)(getBalance() - (sum + (sum * comis2)));}
-
-
     }
 
 
