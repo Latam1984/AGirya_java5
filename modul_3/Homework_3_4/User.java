@@ -44,7 +44,7 @@ public class User {
     }
 
     public void monthIncreaser(int addMonth) {
-        this.monthOfEmployment = monthOfEmployment + addMonth;
+        monthOfEmployment = monthOfEmployment + addMonth;
         System.out.println(monthOfEmployment);
     }
 
