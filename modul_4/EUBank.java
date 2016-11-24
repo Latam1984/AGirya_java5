@@ -12,8 +12,8 @@ package modul_4;
  2%, если EUR и до 1000 и 4%, если EUR и больше 1000
  */
 public class EUBank extends Bank {
-    public EUBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating) {
-        super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating);
+    public EUBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+        super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
 
     @Override

@@ -12,8 +12,8 @@ package modul_4;
 
  */
 public class USBank extends Bank {
-    public USBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating) {
-        super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating);
+    public USBank(long id, String bankCountry, Currency currency, int numberOfEmployees, double avrSalaryOfEmployee, long rating, long totalCapital) {
+        super(id, bankCountry, currency, numberOfEmployees, avrSalaryOfEmployee, rating, totalCapital);
     }
 
     @Override

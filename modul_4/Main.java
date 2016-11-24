@@ -5,12 +5,12 @@ package modul_4;
  */
 public class Main {
     public static void main(String[] args) {
-        USBank bankUsa = new USBank(245618, "USA", Currency.USD, 16, 1800, 3);
-        USBank bankUsa1 = new USBank(245618, "USA", Currency.EUR, 16, 1800, 3);
-        EUBank bankEur = new EUBank(145321, "EU", Currency.USD, 15, 1700, 5);
-        EUBank bankEur1 = new EUBank(145321, "EU", Currency.EUR, 15, 1700, 5);
-        ChinaBank bankChina = new ChinaBank(124563, "Asia", Currency.USD, 12,1400, 7);
-        ChinaBank bankChina1 = new ChinaBank(124563, "Asia", Currency.EUR, 12,1400, 7);
+        USBank bankUsa = new USBank(245618, "USA", Currency.USD, 16, 1800, 3, 1000000);
+        USBank bankUsa1 = new USBank(245618, "USA", Currency.EUR, 16, 1800, 3, 2000000);
+        EUBank bankEur = new EUBank(145321, "EU", Currency.USD, 15, 1700, 5, 30000000);
+        EUBank bankEur1 = new EUBank(145321, "EU", Currency.EUR, 15, 1700, 5, 40000000);
+        ChinaBank bankChina = new ChinaBank(124563, "Asia", Currency.USD, 12,1400, 7, 5000000);
+        ChinaBank bankChina1 = new ChinaBank(124563, "Asia", Currency.EUR, 12,1400, 7, 60000000);
 
         BankSystemImpl bankSystem = new BankSystemImpl();
 
@@ -25,7 +25,7 @@ public class Main {
         bankSystem.fundUser(user1, 1000);
         bankSystem.transferMoney(user4, user1, 500);
         bankSystem.withdrawOfUser(user1, 400);
-
+        System.out.println(user1);
     }
 
 }
