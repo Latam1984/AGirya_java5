@@ -1,6 +1,4 @@
-package modul_5;
-
-import java.util.Arrays;
+package modul_5.Homework_5;
 
 /**
  * Created by Aleksey on 25.11.2016.
@@ -21,10 +19,15 @@ import java.util.Arrays;
 public class Controller {
 
 
-    API apis[] = {new BookingComAPI(), new TripAdvisorAPI(), new GoogleApi()};
+    API apis[] = new API[3];
 
+    public Controller() {
+        apis [0] = new BookingComAPI();
+        apis [1] = new GoogleApi();
+        apis [2] = new TripAdvisorAPI();
+    }
 
-    Room[] requstRooms(int price, int persons, String city, String hotel) {
+    Room[] requestRooms(int price, int persons, String city, String hotel) {
         int count = 0;
         for (API room : apis) {
             count += room.findRooms(price, persons, city, hotel).length;
@@ -56,11 +59,8 @@ public class Controller {
         Room[] result = new Room[count];
         for (int i = 0; i < api1.getRooms().length; i++) {
             if (api1.getRooms()[i].equals(api2.getRooms()[i]))
-                result[i] = api1.getRooms()[i];
+            {result[i] = api1.getRooms()[i];}
         }
         return result;
     }
-
-
-
 }

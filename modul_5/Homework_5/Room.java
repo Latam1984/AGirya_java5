@@ -1,4 +1,4 @@
-package modul_5;
+package modul_5.Homework_5;
 
 import java.util.Date;
 
@@ -35,10 +35,8 @@ public class Room {
     @Override
     public String toString() {
         return "Room{" +
-                "id=" + id +
                 ", price=" + price +
                 ", persons=" + persons +
-                ", dateAvailableFrom=" + dateAvailableFrom +
                 ", hotelName='" + hotelName + '\'' +
                 ", cityName='" + cityName + '\'' +
                 '}';

@@ -1,4 +1,4 @@
-package modul_4;
+package modul_4.Homework_4;
 
 /**
  * Created by Aleksey on 21.11.2016.
