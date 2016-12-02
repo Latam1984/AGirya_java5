@@ -16,17 +16,20 @@ public class Main {
 
         Room [] p2 = controller.requestRooms(160, 2, "Respect", "Kiev");
         System.out.println(Arrays.toString(p2));
+
+        Room [] p3 = controller.requestRooms(50, 1, "Ukraine", "Kiev");
+        System.out.println(Arrays.toString(p3));
 //
 //        controller.requestRooms(60, 2, "Dnipro", "Kiev");
 //        controller.requestRooms(160, 2, "Respect", "Kiev");
 //        controller.requestRooms(160, 2, "Respect", "Kiev");
 //        Arrays.toString(controller.requestRooms(60, 2, "Dnipro", "Kiev"));
 //
-//        API api1 = new BookingComAPI();
-//        API api2 = new GoogleApi();
-//        API api3 = new TripAdvisorAPI();
-//        System.out.println(controller.check(api1, api2));
-//        System.out.println(controller.check(api2, api3));
+        API api1 = new BookingComAPI();
+        API api2 = new GoogleApi();
+        API api3 = new TripAdvisorAPI();
+        System.out.println(controller.check(api1, api2));
+        System.out.println(controller.check(api2, api3));
 
 //        System.out.println(Arrays.toString(controller.requstRooms(50, 1, "Ukraine", "Kiev")));
     }
