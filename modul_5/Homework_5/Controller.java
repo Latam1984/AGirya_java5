@@ -31,14 +31,15 @@ public class Controller {
         int count = 0;
         for (API room : apis) {
             count += room.findRooms(price, persons, city, hotel).length;
+
         }
 
         Room[] result = new Room[count];
         int i = 0;
         for (API a : apis) {
             for (Room r : a.findRooms(price, persons, city, hotel))
-                result[i] = r;
-            i++;
+            {result[i] = r;
+            i++;}
         }
 
         return result;
