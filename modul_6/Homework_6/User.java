@@ -36,4 +36,25 @@ public class User {
     public int getBalance() {
         return balance;
     }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
 }
+

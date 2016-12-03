@@ -1,6 +1,7 @@
 package modul_6.Homework_6;
 
 import java.util.Arrays;
+import modul_6.Homework_6.UserUtils;
 
 /**
  * Created by Aleksey on 02.12.2016.
@@ -15,6 +16,8 @@ public class Main {
         users[2] = new User(1114, "Artur", "Antonov", 1000, 5000);
 
         UserUtils userUtils = new UserUtils();
+
+        for(User user : users) {UserUtils.paySalaryToUsers(users);}
 
         System.out.println(Arrays.toString(UserUtils.uniqueUsers(users)));
     }
