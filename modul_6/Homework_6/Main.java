@@ -16,7 +16,6 @@ public class Main {
         users[2] = new User(1114, "Artur", "Antonov", 1000, 5000);
 
         UserUtils userUtils = new UserUtils();
-
         for(User user : users) {UserUtils.paySalaryToUsers(users);}
 
         System.out.println(Arrays.toString(UserUtils.uniqueUsers(users)));
