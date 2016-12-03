@@ -1,4 +1,4 @@
-package modul_5.Homework_5;
+package modul_5.Homework_5.Homework_5_1;
 
 /**
  * Created by Aleksey on 25.11.2016.

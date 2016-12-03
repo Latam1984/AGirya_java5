@@ -1,5 +1,6 @@
 package modul_2;
 
+import modul_6.Homework_6.ArraysUtils;
 import java.nio.channels.Pipe;
 import java.util.Arrays;
 import java.util.Collections;
@@ -7,24 +8,40 @@ import java.util.Collections;
 /**
  * Created by Aleksey on 01.11.2016.
  */
+
+import modul_6.Homework_6.ArraysUtils;
+
 public class Homework_2_1 {
     public static void main(String[] args) {
-        int[] array1 = new int[]{10, 15, 17, -7, 1, 25, 19, -14, 11, -37};
-        double[] array2 = new double[]{0.5, 1.3, 7, -0.5, 20.5, 13, -11.5, 17, -9, 8};
-        System.out.println("the sum of an array of numbers int = " + sum(array1));
-        System.out.println("the sum of an array of numbers double = " + sum(array2));
-        System.out.println("the minimum number of array int = " + min(array1));
-        System.out.println("the maximum number of array int = " + max(array1));
-        System.out.println("the minimum number of array double = " + min(array2));
-        System.out.println("the maximum number of array double = " + max(array2));
-        System.out.println("the multiplication number of array int = " + multiplication(array1));
-        System.out.println("the multiplication number of array double = " + multiplication(array2));
-        System.out.println("the modulus number of array int = " + modulus(array1));
-        System.out.println("the modulus number of array double = " + modulus(array2));
-        System.out.println("the secondLargest number of array int = " + secondLargest(array1));
-        System.out.println("the secondLargest number of array double = " + secondLargest(array2));
-        System.out.println("the max positive number of array int = " + maxPositive(array1));
-        System.out.println("the max positive number of array double = " + maxPositive(array2));
+        int[] array1 = new int[]{2, 1, 4, 3, 7, 5, 6, 8};
+//        double[] array2 = new double[]{0.5, 1.3, 7, -0.5, 20.5, 13, -11.5, 17, -9, 8};
+//        System.out.println("the sum of an array of numbers int = " + sum(array1));
+//        System.out.println("the sum of an array of numbers double = " + sum(array2));
+//        System.out.println("the minimum number of array int = " + min(array1));
+//        System.out.println("the maximum number of array int = " + max(array1));
+//        System.out.println("the minimum number of array double = " + min(array2));
+//        System.out.println("the maximum number of array double = " + max(array2));
+//        System.out.println("the multiplication number of array int = " + multiplication(array1));
+//        System.out.println("the multiplication number of array double = " + multiplication(array2));
+//        System.out.println("the modulus number of array int = " + modulus(array1));
+//        System.out.println("the modulus number of array double = " + modulus(array2));
+//        System.out.println("the secondLargest number of array int = " + secondLargest(array1));
+//        System.out.println("the secondLargest number of array double = " + secondLargest(array2));
+//        System.out.println("the max positive number of array int = " + maxPositive(array1));
+//        System.out.println("the max positive number of array double = " + maxPositive(array2));
+
+
+        System.out.println(Arrays.toString(array1));
+
+        System.out.println("sum numbers of array = " + ArraysUtils.sum(array1));
+        System.out.println("min number of array = " + ArraysUtils.min(array1));
+        System.out.println("max number of array = " +ArraysUtils.max(array1));
+        System.out.println("multiplication numbers of array = " +  ArraysUtils.multiplication(array1));
+        System.out.println("modulus first and lust numbers = " + ArraysUtils.modulus(array1));
+        System.out.println("second largest number of array = " + ArraysUtils.secondLargest(array1));
+        System.out.println("second max positive number of array = " + ArraysUtils.maxPositive(array1));
+        System.out.println("reverse numbers of array = " + Arrays.toString(ArraysUtils.reverse(array1)));
+        System.out.println("even elements of array = " + Arrays.toString(ArraysUtils.findEvenElements(array1)));
     }
 
 
