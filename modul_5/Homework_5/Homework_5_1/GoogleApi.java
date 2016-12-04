@@ -13,8 +13,8 @@ public class GoogleApi implements API {
 
         int counter = 0;
         for (Room r : getRooms()) {
-            if (r.getPrice() == price && r.getPersons() == persons && r.getCityName() == city && r.getHotelName() == hotel) {
-                counter++;}
+            if (r.getPrice() == price && r.getPersons() == persons && r.getCityName() == city && r.getHotelName() == hotel);
+                counter++;
         }
 
         Room[] room = new Room[counter];

@@ -19,9 +19,9 @@ public class BookingComAPI implements API {
     public Room[] findRooms(int price, int persons, String city, String hotel) {
         int counter = 0;
         for (Room r : getRooms()) {
-            if (r.getPrice() == price && r.getPersons() == persons && r.getCityName() == city && r.getHotelName() == hotel) {
+            if (r.getPrice() == price && r.getPersons() == persons && r.getCityName() == city && r.getHotelName() == hotel);
                 counter++;
-            }
+
         }
 
 
