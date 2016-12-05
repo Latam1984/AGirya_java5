@@ -11,13 +11,13 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Controller controller = new Controller();
-        Room [] p1=controller.requestRooms(60, 2, "Kiev", "Dnipro");
+        Room[] p1 = controller.requestRooms(60, 2, "Kiev", "Dnipro");
         System.out.println(Arrays.toString(p1));
 
-        Room [] p2 = controller.requestRooms(160, 2, "Kiev", "Respect");
+        Room[] p2 = controller.requestRooms(160, 2, "Kiev", "Respect");
         System.out.println(Arrays.toString(p2));
 
-        Room [] p3 = controller.requestRooms(50, 1, "Kiev", "Ukraine");
+        Room[] p3 = controller.requestRooms(50, 1, "Kiev", "Ukraine");
         System.out.println(Arrays.toString(p3));
 
 

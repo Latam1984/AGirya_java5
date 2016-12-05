@@ -22,9 +22,9 @@ public class Controller {
     API apis[] = new API[3];
 
     public Controller() {
-        apis [0] = new BookingComAPI();
-        apis [1] = new GoogleApi();
-        apis [2] = new TripAdvisorAPI();
+        apis[0] = new BookingComAPI();
+        apis[1] = new GoogleApi();
+        apis[2] = new TripAdvisorAPI();
     }
 
     Room[] requestRooms(int price, int persons, String city, String hotel) {
@@ -37,9 +37,10 @@ public class Controller {
         Room[] result = new Room[count];
         int i = 0;
         for (API a : apis) {
-            for (Room r : a.findRooms(price, persons, city, hotel))
-            {result[i] = r;
-            i++;}
+            for (Room r : a.findRooms(price, persons, city, hotel)) {
+                result[i] = r;
+                i++;
+            }
         }
 
         return result;
@@ -61,8 +62,9 @@ public class Controller {
 
         int newCounter = 0;
         for (int i = 0; i < api1.getRooms().length; i++) {
-            if (api1.getRooms()[i].equals(api2.getRooms()[i]))
-            {result[newCounter] = api1.getRooms()[i];}
+            if (api1.getRooms()[i].equals(api2.getRooms()[i])) {
+                result[newCounter] = api1.getRooms()[i];
+            }
         }
         return result;
     }
