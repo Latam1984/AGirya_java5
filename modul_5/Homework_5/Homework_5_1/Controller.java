@@ -44,8 +44,6 @@ public class Controller {
         }
 
         return result;
-
-
     }
 
     public Room[] check(API api1, API api2) {
