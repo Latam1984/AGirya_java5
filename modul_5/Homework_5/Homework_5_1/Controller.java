@@ -31,7 +31,6 @@ public class Controller {
         int count = 0;
         for (API room : apis) {
             count += room.findRooms(price, persons, city, hotel).length;
-
         }
 
         Room[] result = new Room[count];
@@ -43,8 +42,29 @@ public class Controller {
             }
         }
 
-        return result;
+        return nullRoom(result);
     }
+
+// убираем из массива null
+public Room [] nullRoom (Room [] result) {
+    int counter = 0;
+    for (int i = 0; i < result.length; i++) {
+        if (result[i]!=null)
+            counter++;
+    }
+        Room []rooms = new Room[counter];
+    counter = 0;
+    for (int i = 0; i <result.length ; i++) {
+            if(result[i]!=null) {
+                rooms[counter] = result[i];
+                counter++;
+            }
+        }
+   return rooms;
+}
+    
+    
+    
 
     public Room[] check(API api1, API api2) {
         int count = 0;
@@ -64,6 +84,6 @@ public class Controller {
                 result[newCounter] = api1.getRooms()[i];
             }
         }
-        return result;
+        return nullRoom(result);
     }
 }

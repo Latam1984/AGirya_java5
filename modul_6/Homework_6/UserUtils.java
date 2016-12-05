@@ -15,33 +15,19 @@ package modul_6.Homework_6;
 public class UserUtils {
 
     public static User[] uniqueUsers(User[] users) {
+        User [] uniqUsers = new User[users.length];
         for (int i = 0; i < users.length; i++) {
             for (int j = 1; j < users.length; j++) {
                 if (users[i].equals(users[j]))
                     users[i] = null;
-            }
+                uniqUsers[i] = users [i];
+          }
         }
         return deleteEmptyUsers(users);
-
-//         int counter = 0;
-//         for (int i = 0; i <users.length ; i++) {
-//             for (int j = 1; j <users.length ; j++) {
-//                 if(users[i].equals(users[j]))
-//                     counter++;
-//             }
-//         }
-//             User [] uniqUsers = new User[users.length - counter];
-//            int temp = 0;
-//             for (int j = 1; j <users.length ; j++) {
-//                 for (int k = 0; k <users.length ; k++) {
-//                     if (users[j].equals(users))
-//                         continue;
-//                     else uniqUsers[temp] = users[j];
-//                     temp++;
-//                 }
-//             }
-//         return uniqUsers;
     }
+
+
+
 
 
     public User[] usersWithConditionalBalance(User[] users, int balance) {
@@ -63,9 +49,10 @@ public class UserUtils {
     }
 
 
-    final static void paySalaryToUsers(User[] users) {
+    final static User [] paySalaryToUsers(User[] users) {
         for (User user : users)
             user.setBalance(user.getBalance() + user.getSalary());
+        return users;
     }
 
     public static long[] getUsersId(User[] users) {
@@ -81,7 +68,7 @@ public class UserUtils {
         int deletedUser = 0;
 
         for (int i = 0; i < users.length; i++) {
-            if (users == null) {
+            if (users[i] == null) {
                 deletedUser++;
             }
         }
@@ -89,7 +76,7 @@ public class UserUtils {
         User uniqueUsers[] = new User[users.length - deletedUser];
 
         for (int j = 0; j < users.length; j++) {
-            if (users != null) {
+            if (users [j] != null) {
                 users = uniqueUsers;
             }
         }
