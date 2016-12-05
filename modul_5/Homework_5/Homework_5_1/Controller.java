@@ -58,9 +58,11 @@ public class Controller {
         }
 
         Room[] result = new Room[count];
+
+        int newCounter = 0;
         for (int i = 0; i < api1.getRooms().length; i++) {
             if (api1.getRooms()[i].equals(api2.getRooms()[i]))
-            {result[i] = api1.getRooms()[i];}
+            {result[newCounter] = api1.getRooms()[i];}
         }
         return result;
     }
