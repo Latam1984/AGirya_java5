@@ -15,19 +15,21 @@ package modul_6.Homework_6;
 public class UserUtils {
 
     public static User[] uniqueUsers(User[] users) {
-        User [] uniqUsers = new User[users.length];
-        for (int i = 0; i < users.length; i++) {
-            for (int j = 1; j < users.length; j++) {
-                if (users[i].equals(users[j]))
-                    users[i] = null;
-                uniqUsers[i] = users [i];
-          }
+        User[] users2 = users;
+        User[] uniqUsers = new User[users.length];
+        int count = 0;
+
+        for (int i = 1; i < users.length; i++) {
+            for (int j = 0; j < users2.length-1; j++)
+                if (users[i].equals(users2[j])) {
+                    uniqUsers[j] = null;
+                } else {
+                    uniqUsers[count] = users2[j];
+                    count++;
+                }
         }
-        return deleteEmptyUsers(users);
+        return deleteEmptyUsers(uniqUsers);
     }
-
-
-
 
 
     public User[] usersWithConditionalBalance(User[] users, int balance) {
@@ -49,7 +51,7 @@ public class UserUtils {
     }
 
 
-    final static User [] paySalaryToUsers(User[] users) {
+    final static User[] paySalaryToUsers(User[] users) {
         for (User user : users)
             user.setBalance(user.getBalance() + user.getSalary());
         return users;
@@ -76,7 +78,7 @@ public class UserUtils {
         User uniqueUsers[] = new User[users.length - deletedUser];
 
         for (int j = 0; j < users.length; j++) {
-            if (users [j] != null) {
+            if (users[j] != null) {
                 users = uniqueUsers;
             }
         }
