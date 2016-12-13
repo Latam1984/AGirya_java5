@@ -22,15 +22,4 @@ public class Task1 {
         }
         return array;
 }
-//    static public int generateRndom2 (int a, int b){
-//
-//        Random random = new Random();
-//        IntStream stream = random.ints(20);
-//        stream.forEach(t -> System.out.println(t));
-//
-//        System.out.println(random.nextInt(20));
-//
-//        return 0;
-//    }
-
 }

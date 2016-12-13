@@ -1,5 +1,7 @@
 package modul_6.Homework_6;
 
+import java.util.Arrays;
+
 /**
  * Created by Aleksey on 02.12.2016.
  * Создайте класс UserUtils с последующими методами:
@@ -15,20 +17,16 @@ package modul_6.Homework_6;
 public class UserUtils {
 
     public static User[] uniqueUsers(User[] users) {
-        User[] users2 = users;
-        User[] uniqUsers = new User[users.length];
-        int count = 0;
-
-        for (int i = 1; i < users.length; i++) {
-            for (int j = 0; j < users2.length-1; j++)
-                if (users[i].equals(users2[j])) {
-                    uniqUsers[j] = null;
-                } else {
-                    uniqUsers[count] = users2[j];
-                    count++;
+        User[] uniqueUsers = new User[users.length];
+        for (int i = 0; i < users.length; i++) {
+            for (int j = +1; j < users.length; j++) {
+                if (users[i] != null && users[i].equals(users[j])) {
+                    users[i] = null;
                 }
+                uniqueUsers[i] = users[i];
+            }
         }
-        return deleteEmptyUsers(uniqUsers);
+        return (deleteEmptyUsers(uniqueUsers));
     }
 
 
@@ -77,9 +75,10 @@ public class UserUtils {
 
         User uniqueUsers[] = new User[users.length - deletedUser];
 
-        for (int j = 0; j < users.length; j++) {
+        for (int i = 0, j = 0; i < users.length; i++) {
             if (users[j] != null) {
-                users = uniqueUsers;
+                uniqueUsers[j] = users[i];
+                j++;
             }
         }
         return uniqueUsers;
