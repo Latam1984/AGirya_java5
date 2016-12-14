@@ -19,11 +19,10 @@ public class UserUtils {
     public static User[] uniqueUsers(User[] users) {
         User[] uniqueUsers = new User[users.length];
         for (int i = 0; i < users.length; i++) {
-            for (int j = +1; j < users.length; j++) {
-                if (users[i] != null && users[i].equals(users[j])) {
+            for (int j =i+1; j < users.length; j++) {
+                if ((users[i] != null)&&(users[i].equals(users[j])))
                     users[i] = null;
-                }
-                uniqueUsers[i] = users[i];
+                    uniqueUsers[i] = users[i];
             }
         }
         return (deleteEmptyUsers(uniqueUsers));
@@ -76,7 +75,7 @@ public class UserUtils {
         User uniqueUsers[] = new User[users.length - deletedUser];
 
         for (int i = 0, j = 0; i < users.length; i++) {
-            if (users[j] != null) {
+            if (users[i] != null) {
                 uniqueUsers[j] = users[i];
                 j++;
             }

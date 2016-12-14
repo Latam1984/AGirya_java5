@@ -13,7 +13,7 @@ public class Main {
         users[0] = new User(1212, "Aleks", "Girya", 2500, 7500);
         users[1] = new User(1212, "Aleks", "Girya", 2500, 7500);
         users[2] = new User(1112, "Anton", "Antonov", 1000, 5000);
-        users[2] = new User(1114, "Artur", "Antonov", 1000, 5000);
+        users[3] = new User(1114, "Artur", "Antonov", 1000, 5000);
 
         UserUtils userUtils = new UserUtils();
 
