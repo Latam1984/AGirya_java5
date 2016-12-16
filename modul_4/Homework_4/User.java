@@ -2,7 +2,7 @@ package modul_4.Homework_4;
 
 /**
  * Created by Aleksey on 20.11.2016.
- *В классе User должны быть следующие поля:
+ *В классе Room должны быть следующие поля:
  long id
  String name
  double balance
@@ -11,7 +11,7 @@ package modul_4.Homework_4;
  int salary
  Bank bank
 
- Класс User не имеет собственных методов. Но перегружает метод toString.
+ Класс Room не имеет собственных методов. Но перегружает метод toString.
  *
  */
 public class User {
@@ -24,7 +24,7 @@ public class User {
     private Bank bank;
 
     public String toString (){
-        return "User: "
+        return "Room: "
                 + "id = " + id + "; "
                 + "name = " + name + "; "
                 + "balance = " + balance + "; "

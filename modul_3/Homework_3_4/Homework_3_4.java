@@ -3,7 +3,7 @@ package modul_3.Homework_3_4;
 /**
  * Created by Aleksey on 12.11.2016.
  * <p>
- * Создайте класс User со следующими полями:
+ * Создайте класс Room со следующими полями:
  * String name,
  * int balance,
  * int monthsOfEmployment,

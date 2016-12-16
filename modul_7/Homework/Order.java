@@ -9,7 +9,7 @@ package modul_7.Homework;
  * Currency currency
  * String itemName
  * String shopIdentificator
- * User user
+ * Room user
  */
 public class Order {
     private long id;

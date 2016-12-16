@@ -5,13 +5,13 @@ import java.util.Arrays;
 /**
  * Created by Aleksey on 02.12.2016.
  * Создайте класс UserUtils с последующими методами:
- * User[] uniqueUsers(User[] users)
+ * Room[] uniqueUsers(Room[] users)
  * //users совпадают, когда все их поля совпадают
- * User[] usersWithContitionalBalance(User[] users, int balance)
+ * Room[] usersWithContitionalBalance(Room[] users, int balance)
  * //user’s balance == balance
- * User[] paySalaryToUsers(User[] users)
- * long[] getUsersId(User[] users)
- * User[] deleteEmptyUsers(User[] users)
+ * Room[] paySalaryToUsers(Room[] users)
+ * long[] getUsersId(Room[] users)
+ * Room[] deleteEmptyUsers(Room[] users)
  * Удостоверьтесь, что методы paySalaryToUsers и getUsersId не могут быть перегружены в других классах.
  */
 public class UserUtils {

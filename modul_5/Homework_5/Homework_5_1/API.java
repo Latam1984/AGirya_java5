@@ -12,6 +12,6 @@ public interface API {
 
     Room[] getRooms();
 
-    public String toString();
-    // Room [] rooms;
+    String toString();
+
 }

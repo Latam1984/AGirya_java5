@@ -20,7 +20,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Room{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

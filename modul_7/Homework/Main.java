@@ -16,7 +16,7 @@ import java.util.List;
  * удалите дублированные данные со списка
  * удалите объекты, где цена меньше 1500
  * разделите список на 2 списка - заказы в долларах и в гривнах
- * разделите список на столько списков, сколько уникальных городов в User
+ * разделите список на столько списков, сколько уникальных городов в Room
  */
 public class Main {
     public static void main(String[] args) {
@@ -34,23 +34,25 @@ public class Main {
         users.add(new User(9, "Anna", "Antipova", "Kiev", 2400));
         users.add(new User(10, "Helen", "Matveeva", "Kiev", 3700));
 
-        orders.add(new Order(1, 150, Currency.USD, "coffee maker", "Allo", users.get(0)));
-        orders.add(new Order(2, 200, Currency.USD, "coffee machine", "Deshevshe.net", users.get(1)));
-        orders.add(new Order(3, 350, Currency.EUR, "fridge LG 350", "Eldorado", users.get(2)));
+        orders.add(new Order(1, 1500, Currency.USD, "coffee maker", "Allo", users.get(0)));
+        orders.add(new Order(2, 2000, Currency.USD, "coffee machine", "Deshevshe.net", users.get(1)));
+        orders.add(new Order(3, 3500, Currency.EUR, "fridge LG 350", "Eldorado", users.get(2)));
         orders.add(new Order(4, 300, Currency.USD, "fridge Samsung T200", "Rozetka", users.get(3)));
         orders.add(new Order(5, 450, Currency.USD, "television set LG", "Allo", users.get(4)));
         orders.add(new Order(6, 450, Currency.EUR, "TV Samsung", "Eldorado", users.get(5)));
         orders.add(new Order(7, 500, Currency.USD, "TV LG", "Rozetka", users.get(6)));
         orders.add(new Order(8, 1000, Currency.USD, "iPhone7", "Citrus", users.get(7)));
-        orders.add(new Order(1, 150, Currency.USD, "coffee maker", "Allo", users.get(0)));
+        orders.add(new Order(1, 1500, Currency.USD, "coffee maker", "Allo", users.get(0)));
         orders.add(new Order(4, 300, Currency.USD, "fridge Samsung T200", "Rozetka", users.get(3)));
 
-        orders.sort(new PriseComparator());
-        //  orders.sort(new PriseAndCityComparator());
-        //  orders.sort(new NamePriceAndCityComparator());
+//        orders.sort(new PriseComparator());
+//        orders.sort(new PriseAndCityComparator());
+//        orders.sort(new NamePriceAndCityComparator());
+//
+//
+        //System.out.println(PartitionAndDeleteLogic.uniqueOrders(orders));
 
-        System.out.println(orders.toString());
-        System.out.println(orders.get(0));
+//        System.out.println(PartitionAndDeleteLogic.deletePrice(orders));
     }
 
 }
