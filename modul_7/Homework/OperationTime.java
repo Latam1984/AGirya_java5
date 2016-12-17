@@ -223,28 +223,28 @@ public class OperationTime {
         System.out.println("Operation remove 1000 LinkedList String " + "start: " + startOperation + " end: " + endOperation + " elapsed time: " + (endOperation - startOperation));
 //=========================================================
         startOperation = System.currentTimeMillis();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < list1.size(); i++) {
             list1.remove(i);
         }
         endOperation = System.currentTimeMillis();
         System.out.println("Operation remove 10000 ArrayList Integer " + "start: " + startOperation + " end: " + endOperation + " elapsed time: " + (endOperation - startOperation));
 //=========================================================
         startOperation = System.currentTimeMillis();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < list2.size(); i++) {
             list2.remove(i);
         }
         endOperation = System.currentTimeMillis();
         System.out.println("Operation remove 10000 LinkedList Integer " + "start: " + startOperation + " end: " + endOperation + " elapsed time: " + (endOperation - startOperation));
 //=========================================================
         startOperation = System.currentTimeMillis();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < list2.size(); i++) {
             list3.remove(i);
         }
         endOperation = System.currentTimeMillis();
         System.out.println("Operation remove 10000 ArrayList String  " + "start: " + startOperation + " end: " + endOperation + " elapsed time: " + (endOperation - startOperation));
 //=========================================================
         startOperation = System.currentTimeMillis();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < list4.size(); i++) {
             list4.remove(i);
         }
         endOperation = System.currentTimeMillis();
