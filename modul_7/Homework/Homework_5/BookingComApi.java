@@ -8,16 +8,16 @@ import java.util.List;
  * Created by Aleksey on 16.12.2016.
  */
 public class BookingComApi implements API {
-    List<Room> bookingComRooms;
+    List<Room> bookingComRooms = new ArrayList<>();
 
     public BookingComApi() {
-        //List<Room> BookingComRooms = new ArrayList<>();
         bookingComRooms.add(new Room(1, 50, 1, new Date(), "Ukraine", "Kiev"));
         bookingComRooms.add(new Room(1, 60, 2, new Date(), "Dnipro", "Kiev"));
         bookingComRooms.add(new Room(1, 80, 1, new Date(), "Hreshatik", "Kiev"));
         bookingComRooms.add(new Room(1, 160, 2, new Date(), "Respect", "Kiev"));
         bookingComRooms.add(new Room(1, 340, 2, new Date(), "King", "Kiev"));
     }
+
 
     @Override
     public List<Room> findRooms(int price, int persons, String city, String hotel) {
@@ -32,6 +32,14 @@ public class BookingComApi implements API {
 
 
     @Override
-    public List<Room> getRoom() {return bookingComRooms;
+    public List<Room> getRoom() {
+        return bookingComRooms;
+    }
+
+    @Override
+    public String toString() {
+        return "BookingComApi{" +
+                "bookingComRooms=" + bookingComRooms +
+                '}';
     }
 }

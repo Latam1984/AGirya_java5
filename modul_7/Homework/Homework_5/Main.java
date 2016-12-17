@@ -7,8 +7,8 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-    Controller controller = new Controller();
+        Controller controller = new Controller();
         List<API> request1 = controller.requestRooms(1, 50, "Kiev", "Ukraine");
-        System.out.println(request1);
+        System.out.println(request1.toString());
     }
 }

@@ -5,11 +5,11 @@ import java.util.Date;
 /**
  * Created by Aleksey on 16.12.2016.
  * long id
- int price
- int persons
- Date dateAvailableFrom
- String hotelName
- String cityName
+ * int price
+ * int persons
+ * Date dateAvailableFrom
+ * String hotelName
+ * String cityName
  */
 public class Room {
     private long id;
