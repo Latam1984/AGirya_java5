@@ -11,7 +11,7 @@ public class TripAdvisorApi implements API {
     List<Room> tripAdvisorRooms;
 
     public TripAdvisorApi() {
-        List<Room> tripAdvisorRooms = new ArrayList<>();
+      //  List<Room> tripAdvisorRooms = new ArrayList<>();
         tripAdvisorRooms.add(new Room(1, 50, 1, new Date(), "Ukraine", "Kiev"));
         tripAdvisorRooms.add(new Room(1, 60, 2, new Date(), "Dnipro", "Kiev"));
         tripAdvisorRooms.add(new Room(1, 80, 1, new Date(), "Hreshatik", "Kiev"));

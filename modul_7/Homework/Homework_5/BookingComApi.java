@@ -11,7 +11,7 @@ public class BookingComApi implements API {
     List<Room> bookingComRooms;
 
     public BookingComApi() {
-        List<Room> BookingComRooms = new ArrayList<>();
+        //List<Room> BookingComRooms = new ArrayList<>();
         bookingComRooms.add(new Room(1, 50, 1, new Date(), "Ukraine", "Kiev"));
         bookingComRooms.add(new Room(1, 60, 2, new Date(), "Dnipro", "Kiev"));
         bookingComRooms.add(new Room(1, 80, 1, new Date(), "Hreshatik", "Kiev"));

@@ -11,7 +11,7 @@ public class GoogleApi implements API {
     List<Room> googleComRooms;
 
     public GoogleApi() {
-        List<Room> rooms = new ArrayList<>();
+      //  List<Room> rooms = new ArrayList<>();
         googleComRooms.add(new Room(1, 50, 1, new Date(), "Ukraine", "Kiev"));
         googleComRooms.add(new Room(1, 60, 2, new Date(), "Dnipro", "Kiev"));
         googleComRooms.add(new Room(1, 80, 1, new Date(), "Hreshatik", "Kiev"));
