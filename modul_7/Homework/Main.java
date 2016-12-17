@@ -19,7 +19,7 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        Set<Order> orders = new TreeSet<>();
+        Set<Order> orders = new TreeSet<>(new PriseComparator());
         List<User> users = new ArrayList<>();
         List<Order> orders1 = new ArrayList<>();
 
@@ -65,10 +65,8 @@ public class Main {
 
     private static void checkPetrov(Set<Order> orders) {
         for (Order order : orders)
-            if (order.getUser().getFirstName().equals("Petrov")) {
+            if (order.getUser().getLastName().equals("Petrov")) {
                 System.out.println("Petov was found");
-            } else {
-                System.out.println("Petrov was not found");
             }
     }
 }

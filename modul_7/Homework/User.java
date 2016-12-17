@@ -16,6 +16,17 @@ public class User {
     private String city;
     private int balance;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", city='" + city + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
+
     public User(long id, String firstName, String lastName, String city, int balance) {
         this.id = id;
         this.firstName = firstName;
