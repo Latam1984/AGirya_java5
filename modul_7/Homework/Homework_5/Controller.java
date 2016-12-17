@@ -17,6 +17,12 @@ import java.util.List;
 public class Controller {
      List<API> apis = new ArrayList<>();
 
+    public Controller(){
+        apis.add(new BookingComApi());
+        apis.add(new TripAdvisorApi());
+        apis.add(new GoogleApi());
+    }
+
 
     public List<API> requestRooms (int price, int persons, String city, String hotel){
         List<API> resultRequestRooms = new ArrayList<>();
