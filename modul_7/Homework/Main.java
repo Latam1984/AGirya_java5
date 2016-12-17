@@ -1,7 +1,6 @@
 package modul_7.Homework;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Aleksey on 12.12.2016.
@@ -20,7 +19,7 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) {
-        List<Order> orders = new ArrayList<>();
+        Set<Order> orders = new TreeSet<>();
         List<User> users = new ArrayList<>();
 
         users.add(new User(1, "Alex", "Girya", "Kiev", 5000));
@@ -48,11 +47,27 @@ public class Main {
 //        orders.sort(new PriseComparator());
 //        orders.sort(new PriseAndCityComparator());
 //        orders.sort(new NamePriceAndCityComparator());
-//
-//
-        //System.out.println(PartitionAndDeleteLogic.uniqueOrders(orders));
 
-//        System.out.println(PartitionAndDeleteLogic.deletePrice(orders));
+        Iterator<Order> iterator = orders.iterator();
+        System.out.println(iterator.next());
+        checkPetrov(orders);
+
     }
 
+    private static void deleteUSD(Set<Order> orders) {
+        Iterator<Order> iterator = orders.iterator();
+        while (iterator.hasNext()) {
+            if (iterator.next().getCurrency().equals(Currency.USD))
+                iterator.remove();
+        }
+    }
+
+    private static void checkPetrov(Set<Order> orders) {
+        for (Order order : orders)
+            if (order.getUser().getFirstName().equals("Petrov")) {
+                System.out.println("Petov was found");
+            } else {
+                System.out.println("Petrov was not found");
+            }
+    }
 }
