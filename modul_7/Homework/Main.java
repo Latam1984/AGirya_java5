@@ -21,6 +21,7 @@ public class Main {
     public static void main(String[] args) {
         Set<Order> orders = new TreeSet<>();
         List<User> users = new ArrayList<>();
+        List<Order> orders1 = new ArrayList<>();
 
         users.add(new User(1, "Alex", "Girya", "Kiev", 5000));
         users.add(new User(2, "Petya", "Petrov", "Kiev", 1000));
@@ -44,9 +45,9 @@ public class Main {
         orders.add(new Order(1, 1500, Currency.USD, "coffee maker", "Allo", users.get(0)));
         orders.add(new Order(4, 300, Currency.USD, "fridge Samsung T200", "Rozetka", users.get(3)));
 
-//        orders.sort(new PriseComparator());
-//        orders.sort(new PriseAndCityComparator());
-//        orders.sort(new NamePriceAndCityComparator());
+        orders1.sort(new PriseComparator());
+        orders1.sort(new PriseAndCityComparator());
+        orders1.sort(new NamePriceAndCityComparator());
 
         Iterator<Order> iterator = orders.iterator();
         System.out.println(iterator.next());
