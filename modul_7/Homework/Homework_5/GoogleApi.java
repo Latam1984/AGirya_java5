@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by Aleksey on 16.12.2016.
  */
-public class GoogleApi extends AbstractApiImpl {
+public class GoogleApi implements API {
     List<Room> googleComRooms;
 
     public GoogleApi() {
@@ -19,10 +19,16 @@ public class GoogleApi extends AbstractApiImpl {
         googleComRooms.add(new Room(1, 340, 2, new Date(), "King", "Kiev"));
     }
 
-//    @Override
-//    public List<Room> findRooms(int price, int persons, String city, String hotel) {
-//        return null;
-//    }
+    @Override
+    public List<Room> findRooms(int price, int persons, String city, String hotel) {
+        List <Room> findRooms = new ArrayList<>();
+        for (Room room : getRoom()){
+            if (room.getPrice() == price && room.getPersons() == persons && room.getCityName() == city && room.getHotelName() == hotel) {
+                findRooms.add(room);
+            }
+        }
+        return findRooms;
+    }
 
     @Override
     public List<Room> getRoom() {
