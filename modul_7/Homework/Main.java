@@ -45,17 +45,32 @@ public class Main {
         orders.add(new Order(1, 1500, Currency.USD, "coffee maker", "Allo", users.get(0)));
         orders.add(new Order(4, 300, Currency.USD, "fridge Samsung T200", "Rozetka", users.get(3)));
 
+        orders1.add(new Order(1, 1500, Currency.USD, "coffee maker", "Allo", users.get(0)));
+        orders1.add(new Order(2, 2000, Currency.USD, "coffee machine", "Deshevshe.net", users.get(1)));
+        orders1.add(new Order(3, 3500, Currency.EUR, "fridge LG 350", "Eldorado", users.get(2)));
+        orders1.add(new Order(4, 300, Currency.USD, "fridge Samsung T200", "Rozetka", users.get(3)));
+        orders1.add(new Order(5, 450, Currency.USD, "television set LG", "Allo", users.get(4)));
+        orders1.add(new Order(6, 450, Currency.EUR, "TV Samsung", "Eldorado", users.get(5)));
+        orders1.add(new Order(7, 500, Currency.USD, "TV LG", "Rozetka", users.get(6)));
+        orders1.add(new Order(8, 1000, Currency.USD, "iPhone7", "Citrus", users.get(7)));
+        orders1.add(new Order(1, 1500, Currency.USD, "coffee maker", "Allo", users.get(0)));
+        orders1.add(new Order(4, 300, Currency.USD, "fridge Samsung T200", "Rozetka", users.get(3)));
+
         orders1.sort(new PriseComparator());
         orders1.sort(new PriseAndCityComparator());
         orders1.sort(new NamePriceAndCityComparator());
 
+
+
         Iterator<Order> iterator = orders.iterator();
         System.out.println(iterator.next());
         checkPetrov(orders);
+        deleteUSD(orders1);
+        System.out.println(orders1);
 
     }
 
-    private static void deleteUSD(Set<Order> orders) {
+    private static void deleteUSD(List<Order> orders) {
         Iterator<Order> iterator = orders.iterator();
         while (iterator.hasNext()) {
             if (iterator.next().getCurrency().equals(Currency.USD))
@@ -63,8 +78,8 @@ public class Main {
         }
     }
 
-    private static void checkPetrov(Set<Order> orders) {
-        for (Order order : orders)
+    private static void checkPetrov(Set<Order> orders1) {
+        for (Order order : orders1)
             if (order.getUser().getLastName().equals("Petrov")) {
                 System.out.println("Petov was found");
             }
