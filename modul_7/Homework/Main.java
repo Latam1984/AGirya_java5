@@ -57,8 +57,11 @@ public class Main {
         orders1.add(new Order(4, 300, Currency.USD, "fridge Samsung T200", "Rozetka", users.get(3)));
 
         orders1.sort(new PriseComparator());
+        System.out.println(orders1);
         orders1.sort(new PriseAndCityComparator());
+        System.out.println(orders1);
         orders1.sort(new NamePriceAndCityComparator());
+        System.out.println(orders1);
 
 
 
