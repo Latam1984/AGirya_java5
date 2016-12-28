@@ -1,6 +1,7 @@
 package modul_3.Homework_3_3;
 
 import java.util.Date;
+import java.util.Map;
 
 /**
  * Created by Aleksey on 11.11.2016.
@@ -55,4 +56,6 @@ public class Solution {
     SpecialStudent specialStudent = new SpecialStudent("Ivanov", courses);
     SpecialStudent specialStudent1 = new SpecialStudent("Aleksandrov", "Aleksandr", 6);
     SpecialStudent specialStudent2 = new SpecialStudent("Anton", "Antipenko", 5, "NTU", 9, 1514, 123432156);
+
+
 }

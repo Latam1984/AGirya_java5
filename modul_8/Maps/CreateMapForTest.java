@@ -10,12 +10,12 @@ public class CreateMapForTest {
     public static void main(String[] args) {
 
 //question1
-        Map<String, String> map = new HashMap<>();
+       Map<String, String> map = new HashMap<>();
         map.put("key", "value");
         map.put("key", "value");
         String res = map.get("key");
         System.out.println(res);
-//question2
+//question2 - ошибка
         Map map1 = new HashMap<>();
         map1.put("key", "value");
         String res1 = map.get("key");

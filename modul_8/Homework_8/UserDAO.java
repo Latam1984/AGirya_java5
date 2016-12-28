@@ -1,59 +1,47 @@
 package modul_8.Homework_8;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Aleksey on 24.12.2016.
  */
-public class UserDAO extends AbstractDAOImpl {
-    long id;
-    String name;
+public class UserDAO<T extends User> extends AbstractDAOImpl<T> {
 
-    public UserDAO(long id, String name) {
-        this.id = id;
-        this.name = name;
-    }
 
     @Override
-    public String toString() {
-        return "UserDAO{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
-    }
-
-    @Override
-    public void save(Object target) {
+    public void save(T target) {
         super.save(target);
     }
 
     @Override
-    public void delete(Object target) {
-        super.delete(target);
+    public void delete(T target) {
+        list.remove(target);
     }
+
 
     @Override
     public void deleteAll(List T) {
-        super.deleteAll(T);
+       list.removeAll(T);
     }
 
     @Override
     public void saveAll(List T) {
-        super.saveAll(T);
+        new ArrayList<>(list);
     }
 
     @Override
     public List getList() {
-        return super.getList();
+        return new ArrayList(list);
     }
 
     @Override
     public void daleteById(long id) {
-        super.daleteById(id);
+        list.remove((int)id);
     }
 
     @Override
-    public Object get(long id) {
-        return super.get(id);
+    public T get(long id) {
+        return list.get((int)id);
     }
 }

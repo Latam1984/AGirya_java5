@@ -9,6 +9,10 @@ import java.util.List;
 public class AbstractDAOImpl <T> implements AbstractDAO <T>{
     List <T> list = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return  "Users: " + list ;
+    }
 
     @Override
     public void save(T target) {
