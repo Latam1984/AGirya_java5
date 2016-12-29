@@ -22,7 +22,7 @@ public class UserDAO<T extends User> extends AbstractDAOImpl<T> {
 
     @Override
     public void deleteAll(List T) {
-       list.removeAll(T);
+        list.removeAll(T);
     }
 
     @Override
@@ -37,11 +37,11 @@ public class UserDAO<T extends User> extends AbstractDAOImpl<T> {
 
     @Override
     public void daleteById(long id) {
-        list.remove((int)id);
+        list.remove((int) id);
     }
 
     @Override
     public T get(long id) {
-        return list.get((int)id);
+        return list.get((int) id);
     }
 }

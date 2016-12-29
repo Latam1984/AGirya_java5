@@ -20,7 +20,7 @@ public class User {
     public String toString() {
         return
                 "id = " + id +
-                "; name = " + name;
+                        "; name = " + name;
     }
 
     public long getId() {
