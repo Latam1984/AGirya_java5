@@ -29,7 +29,7 @@ import static modul_9.Homework.Currency.USD;
  * -нельзя использовать циклы
  * <p>
  * Определите каждую подзадачу в отдельный метод.
- * Создайте класс modul_10.Homework_11.Main и протестируйте каждый метод на тестовых данных.
+ * Создайте класс modul_10.Homework_10.Main и протестируйте каждый метод на тестовых данных.
  */
 public class Main {
     public static void main(String[] args) {
