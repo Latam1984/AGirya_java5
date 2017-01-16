@@ -1,4 +1,4 @@
-package modul_10.Homework_10;
+package modul_10.Homework_10.Hometask1;
 
 /**
  * Created by Aleksey on 16.01.2017.
