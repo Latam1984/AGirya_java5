@@ -44,7 +44,7 @@ public class Task1 {
                 readFileLine = br.readLine();
             }
         } catch (IOException e) {
-            System.err.format("IOException read file", e);
+            System.out.println("IOException read file");
             return null;
         } finally {
             try {
