@@ -14,12 +14,9 @@ import java.util.Map;
  */
 public class MainVersion2 {
     public static void main(String[] args) throws IOException {
-
         String path = "/Study/Java/Test.rtf";
         Map<String, String> map = new HashMap<>();
         map.put("Aleksey", "Girya");
-
-        replacer(path, map);
     }
 
     public static String replacer(String path, Map<String, String> map) throws IOException {

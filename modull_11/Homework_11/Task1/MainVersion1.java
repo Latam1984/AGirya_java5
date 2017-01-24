@@ -13,10 +13,11 @@ import java.util.Map;
 public class MainVersion1 {
 
     public static void main(String[] args) throws IOException, NullPointerException {
-        String path = "/Study/Java/Test.rtf";
+        String path = "/Study/Java/Test.txt";
         Map map = new HashMap();
         map.put("Aleksey", "Girya");
-        System.out.println(replacer(path, map));
+        String replaceString;
+
     }
 
     public static String replacer(String path, Map<String, String> map) throws IOException, NullPointerException {
