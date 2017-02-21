@@ -1,0 +1,7 @@
+#=============FIND MIN SALARY IN MIN PROFITABLE PROJECT==============
+SELECT PROJECT, COSTS,SUM(SALARY)  FROM developers
+INNER JOIN developers_projects ON developers.ID = developers_projects.ID_DEVELOPERS
+INNER JOIN projects ON developers_projects.ID_PROJECTS = projects.ID
+#WHERE MIN(projects.COSTS)
+GROUP BY PROJECT
+ORDER BY COSTS ASC
